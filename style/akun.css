@@ -1,0 +1,164 @@
+       /* ===== Layout Halaman ===== */
+        .page-wrap {
+            max-width: 480px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+
+        /* ===== Card ===== */
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 14px rgba(33,115,70,0.10);
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            background: var(--hijau);
+            color: #fff;
+            padding: 14px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* ===== Form ===== */
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--teks-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 9px 12px;
+            border: 1.5px solid var(--abu-border);
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: var(--teks);
+            background: #fafafa;
+            transition: border 0.15s, background 0.15s;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: var(--hijau);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(33,115,70,0.10);
+        }
+
+        .form-hint {
+            font-size: 11px;
+            color: var(--teks-muted);
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        /* ===== Divider ===== */
+        .divider {
+            border: none;
+            border-top: 1px solid var(--abu-border);
+            margin: 16px 0;
+        }
+
+        /* ===== Tombol ===== */
+        .btn {
+            display: inline-block;
+            padding: 9px 20px;
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s, transform 0.1s;
+            letter-spacing: 0.3px;
+        }
+
+        .btn:active { transform: scale(0.97); }
+
+        .btn-hijau {
+            background: var(--hijau);
+            color: #fff;
+        }
+        .btn-hijau:hover { background: var(--hijau-dark); }
+
+        .btn-merah {
+            background: #c0392b;
+            color: #fff;
+        }
+        .btn-merah:hover { background: #a93226; }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--hijau);
+            border: 1.5px solid var(--hijau);
+        }
+        .btn-outline:hover {
+            background: var(--hijau-light);
+        }
+
+        .btn-full { width: 100%; text-align: center; }
+
+        /* ===== Alert / Pesan ===== */
+        .alert {
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .alert-sukses {
+            background: #e8f5e9;
+            color: #1a5a37;
+            border: 1px solid #c8e6c9;
+        }
+
+        .alert-error {
+            background: #fdecea;
+            color: #922b21;
+            border: 1px solid #f5c6c2;
+        }
+
+        /* ===== Logout confirm ===== */
+        .logout-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .logout-info {
+            font-size: 13px;
+            color: var(--teks-muted);
+        }
+
+        .logout-info span {
+            font-weight: 700;
+            color: var(--teks);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 500px) {
+            .page-wrap { margin: 16px auto; }
+            .card-body { padding: 16px; }
+        }

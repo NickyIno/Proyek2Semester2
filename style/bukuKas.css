@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hijau:       #217346;
+    --hijau-dark:  #1a5a37;
+    --hijau-light: #e8f5e9;
+    --hijau-mid:   #c8e6c9;
+    --putih:       #ffffff;
+    --abu-bg:      #f0f2f0;
+    --abu-border:  #d0d7d0;
+    --abu-row:     #f7faf7;
+    --merah:       #c0392b;
+    --teks:        #1a2a1a;
+    --teks-muted:  #5a6e5a;
+    --shadow:      0 2px 12px rgba(33,115,70,0.10);
+    --radius:      8px;
+    --font-body:   'Plus Jakarta Sans', sans-serif;
+    --font-mono:   'DM Mono', monospace;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 13px;
+    background: var(--abu-bg);
+    color: var(--teks);
+    min-height: 100vh;
+}
+
+.summary-bar {
+    background: var(--hijau);
+    color: var(--putih);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(33,115,70,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.summary-bar strong {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.summary-bar .separator {
+    color: var(--hijau-mid);
+    font-size: 16px;
+}
+
+.summary-bar a.back-link {
+    color: var(--hijau-mid);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border: 1px solid var(--hijau-mid);
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    margin-left: auto;
+}
+
+.summary-bar a.back-link:hover {
+    background: var(--putih);
+    color: var(--hijau);
+}
+
+
+.table-wrapper {
+    padding: 16px;
+    overflow-x: auto;
+}
+
+
+.excel-table {
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--putih);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    min-width: 560px;
+}
+
+.excel-table thead th {
+    background: var(--hijau);
+    color: var(--putih);
+    border: 1px solid var(--hijau-dark);
+    padding: 9px 10px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.excel-table tbody td {
+    border: 1px solid var(--abu-border);
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+}
+
+.excel-table tbody tr:nth-child(even) td {
+    background: var(--abu-row);
+}
+
+.excel-table tbody tr:not(.input-row):hover td {
+    background: var(--hijau-light);
+    transition: background 0.15s;
+}
+
+/* Kolom nominal pakai font monospace */
+.excel-table td.nominal {
+    font-family: var(--font-mono);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.input-row td {
+    background: var(--hijau-light) !important;
+    border-color: var(--hijau-mid) !important;
+}
+
+.input-row input[type="date"],
+.input-row input[type="text"],
+.input-row input[type="number"] {
+    width: 100%;
+    border: 1px solid transparent;
+    background: transparent;
+    padding: 5px 6px;
+    font-family: var(--font-body);
+    font-size: 12.5px;
+    color: var(--teks);
+    border-radius: 4px;
+    transition: border 0.15s, background 0.15s;
+    outline: none;
+}
+
+.input-row input:focus {
+    background: var(--putih);
+    border-color: var(--hijau);
+    box-shadow: 0 0 0 2px rgba(33,115,70,0.15);
+}
+
+.input-row input::placeholder {
+    color: var(--teks-muted);
+    font-style: italic;
+}
+
+.btn-save {
+    background: var(--hijau);
+    color: var(--putih);
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+.btn-save:hover {
+    background: var(--hijau-dark);
+    transform: scale(1.04);
+}
+
+.btn-save:active {
+    transform: scale(0.97);
+}
+
+a.link-hapus {
+    color: var(--merah);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    transition: background 0.15s;
+}
+
+a.link-hapus:hover {
+    background: #fdecea;
+}
+
+.excel-table tfoot tr td {
+    background: #eef3ee;
+    font-weight: 700;
+    border: 1px solid var(--abu-border);
+    padding: 8px 10px;
+    font-size: 12.5px;
+}
+
+.excel-table tfoot .saldo-cell {
+    background: var(--hijau);
+    color: var(--putih);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+
+.no-col {
+    text-align: center;
+    color: var(--teks-muted);
+    font-size: 11.5px;
+    width: 40px;
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE (max 640px)
+   ============================================= */
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+
+    .summary-bar {
+        padding: 10px 14px;
+        gap: 8px;
+    }
+
+    .summary-bar strong {
+        font-size: 13px;
+    }
+
+    .table-wrapper {
+        padding: 10px 8px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .excel-table thead th,
+    .excel-table tbody td,
+    .excel-table tfoot td {
+        padding: 5px 7px;
+        font-size: 11.5px;
+    }
+
+    .btn-save {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .excel-table tfoot .label-total {
+        font-size: 11px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE — TABLET (641–900px)
+   ============================================= */
+@media (min-width: 641px) and (max-width: 900px) {
+    .table-wrapper {
+        padding: 14px 12px;
+    }
+}

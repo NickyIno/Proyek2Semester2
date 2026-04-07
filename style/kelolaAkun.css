@@ -1,0 +1,360 @@
+/* =============================================
+   kelolaAkun.css
+   Halaman manajemen akun — selaras dengan main.css
+   ============================================= */
+
+/* ── Page Header ─────────────────────────────── */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.page-header h1 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.page-header h1 i {
+  color: var(--excel-green);
+  font-size: 1.25rem;
+}
+
+/* ── Tombol Tambah Akun ───────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: var(--excel-green);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px var(--space-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--excel-green-light);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ── Card Pembungkus Tabel ────────────────────── */
+.card {
+  background-color: var(--surface-base);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+/* ── Search & Filter Bar ─────────────────────── */
+.card-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border-bottom: var(--border-thin);
+  background-color: var(--surface-raised);
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+.search-wrapper i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-500);
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 7px 10px 7px 30px;
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  color: var(--gray-900);
+  background-color: var(--surface-base);
+  border: var(--border-medium);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.search-input:focus {
+  border-color: var(--excel-green);
+  box-shadow: 0 0 0 3px rgba(33, 115, 70, 0.12);
+}
+
+.search-input::placeholder {
+  color: var(--gray-500);
+}
+
+.toolbar-meta {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
+/* ── Tabel ────────────────────────────────────── */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.akun-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+/* Header tabel */
+.akun-table thead tr {
+  background-color: var(--excel-green);
+  color: #ffffff;
+}
+
+.akun-table thead th {
+  padding: 11px var(--space-md);
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.akun-table thead th:first-child {
+  width: 64px;
+  text-align: center;
+}
+
+.akun-table thead th:last-child {
+  text-align: center;
+  width: 140px;
+}
+
+/* Body tabel */
+.akun-table tbody tr {
+  border-bottom: var(--border-thin);
+  transition: background-color 0.1s ease;
+}
+
+.akun-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.akun-table tbody tr:hover {
+  background-color: var(--excel-green-pale);
+}
+
+.akun-table tbody td {
+  padding: 11px var(--space-md);
+  color: var(--gray-900);
+  vertical-align: middle;
+}
+
+.akun-table tbody td:first-child {
+  text-align: center;
+  color: var(--gray-500);
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+}
+
+.akun-table tbody td:last-child {
+  text-align: center;
+}
+
+/* ── Badge Role ───────────────────────────────── */
+.badge-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.badge-role.admin {
+  background-color: rgba(33, 115, 70, 0.12);
+  color: var(--excel-green);
+  border: 1px solid rgba(33, 115, 70, 0.25);
+}
+
+.badge-role.user {
+  background-color: rgba(21, 101, 192, 0.10);
+  color: var(--color-info);
+  border: 1px solid rgba(21, 101, 192, 0.20);
+}
+
+/* ── Aksi Tombol ──────────────────────────────── */
+.aksi-group {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Tombol Edit */
+.btn-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  font-family: var(--font-main);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-info);
+  background-color: rgba(21, 101, 192, 0.08);
+  border: 1px solid rgba(21, 101, 192, 0.20);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.btn-edit:hover {
+  background-color: rgba(21, 101, 192, 0.15);
+  border-color: rgba(21, 101, 192, 0.40);
+  color: var(--color-info);
+  transform: translateY(-1px);
+}
+
+/* Tombol Hapus */
+.btn-hapus {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  font-family: var(--font-main);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-danger);
+  background-color: rgba(198, 40, 40, 0.07);
+  border: 1px solid rgba(198, 40, 40, 0.20);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.btn-hapus:hover {
+  background-color: rgba(198, 40, 40, 0.13);
+  border-color: rgba(198, 40, 40, 0.40);
+  color: var(--color-danger);
+  transform: translateY(-1px);
+}
+
+/* Tombol Hapus dinonaktifkan (akun sendiri) */
+.btn-hapus.disabled,
+.btn-hapus[disabled] {
+  opacity: 0.38;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
+/* ── Empty State ──────────────────────────────── */
+.empty-state {
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  color: var(--gray-500);
+}
+
+.empty-state i {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+  color: var(--gray-300);
+}
+
+.empty-state p {
+  font-size: 0.9375rem;
+}
+
+/* ── Highlight baris akun sendiri ────────────── */
+.akun-table tbody tr.self-row td {
+  background-color: rgba(249, 168, 37, 0.07);
+}
+
+.akun-table tbody tr.self-row:hover td {
+  background-color: rgba(249, 168, 37, 0.12);
+}
+
+.self-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #7B5800;
+  background-color: rgba(249, 168, 37, 0.18);
+  border: 1px solid rgba(249, 168, 37, 0.45);
+  border-radius: 999px;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 600px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .akun-table thead th,
+  .akun-table tbody td {
+    padding: 9px var(--space-sm);
+  }
+
+  .btn-edit,
+  .btn-hapus {
+    padding: 5px 9px;
+    font-size: 0.75rem;
+  }
+}
