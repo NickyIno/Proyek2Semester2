@@ -25,7 +25,7 @@
 
 ## 📖 Tentang Proyek
 
-**Buku Kas Tahu Kupat 2** adalah aplikasi manajemen kas berbasis web yang dibangun menggunakan **PHP Native** tanpa framework. Dirancang untuk membantu pengguna mencatat transaksi keuangan secara terstruktur — cocok untuk kebutuhan pribadi, organisasi kecil, maupun tugas sekolah yang dikejar deadline.
+**Buku Kas 2** adalah aplikasi manajemen kas berbasis web yang dibangun menggunakan **PHP Native** tanpa framework. Dirancang untuk membantu pengguna mencatat transaksi keuangan secara terstruktur — cocok untuk kebutuhan pribadi, organisasi kecil, maupun tugas sekolah yang dikejar deadline.
 
 Dibuat dengan pendekatan sederhana namun tetap memperhatikan struktur backend yang bersih, pengelolaan database yang aman, serta tampilan frontend yang responsif.
 
