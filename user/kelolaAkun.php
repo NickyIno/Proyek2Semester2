@@ -105,7 +105,7 @@ $current_user_id = $_SESSION['user_id'];
                                                 <i class="fa-solid fa-pen-to-square"></i> Edit
                                             </a>
                                             <a
-                                                href="hapus_akun.php?id=<?php echo $user['id']; ?>"
+                                                href="hapusAkun.php?id=<?php echo $user['id']; ?>"
                                                 class="btn-hapus <?php echo $isSelf ? 'disabled' : ''; ?>"
                                                 data-id="<?php echo $user['id']; ?>"
                                                 data-name="<?php echo htmlspecialchars($user['username']); ?>"
