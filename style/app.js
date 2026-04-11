@@ -1,7 +1,3 @@
-/**
- * Core Application Javascript for Excel-Style PHP App
- */
-
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("mobile-menu-toggle");
     const sidebar = document.getElementById("app-sidebar");
