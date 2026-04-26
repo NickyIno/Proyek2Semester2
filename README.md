@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💰 Proyek 2 Semester 2 - Buku Kas
+# 💰 Buku Kas
 
 <img src="https://www.php.net/images/logos/php-logo.svg" width="180" alt="PHP Logo">
 
@@ -25,7 +25,7 @@
 
 ## 📖 Tentang Proyek
 
-**Buku Kas 2** adalah aplikasi manajemen kas berbasis web yang dibangun menggunakan **PHP Native** tanpa framework. Dirancang untuk membantu pengguna mencatat transaksi keuangan secara terstruktur — cocok untuk kebutuhan pribadi, organisasi kecil, maupun tugas sekolah yang dikejar deadline.
+**Buku Kas** adalah aplikasi manajemen kas berbasis web yang dibangun menggunakan **PHP Native** tanpa framework. Dirancang untuk membantu pengguna mencatat transaksi keuangan secara terstruktur — cocok untuk kebutuhan pribadi, organisasi kecil, maupun tugas sekolah yang dikejar deadline.
 
 Dibuat dengan pendekatan sederhana namun tetap memperhatikan struktur backend yang bersih, pengelolaan database yang aman, serta tampilan frontend yang responsif.
 
@@ -206,7 +206,7 @@ http://localhost/Proyek2Semester2
 
 ---
 
-## 🔭 Rencana Pengembangan(silahkan kembangkan sendiri kalo niat)
+## 🔭 Saran Pengembangan(silahkan kembangkan sendiri kalo niat)
 
 - [ ] 🔍 Search & filter transaksi
 - [ ] 📈 Grafik keuangan interaktif
