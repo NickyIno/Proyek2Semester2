@@ -181,7 +181,8 @@ XAMPP    →  htdocs\Buku-kas
 
 ```
 1. Buka phpMyAdmin
-2. Import file: dump.sql
+2. Buat database bernama "Kas'
+3. Import file: dump.sql
 ```
 
 ### 4. Konfigurasi Koneksi
