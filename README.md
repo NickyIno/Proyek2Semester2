@@ -181,7 +181,7 @@ XAMPP    →  htdocs\Buku-kas
 
 ```
 1. Buka phpMyAdmin
-2. Buat database bernama "Kas'
+2. Buat database bernama "kas"
 3. Import file: dump.sql
 ```
 
@@ -193,7 +193,7 @@ Edit `aksi/koneksi.php`:
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "Kas";
+$db   = "kas";
 ```
 
 ### 5. Jalankan Aplikasi
