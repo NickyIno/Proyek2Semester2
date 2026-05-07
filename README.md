@@ -167,7 +167,7 @@ Database dirancang sederhana dengan tiga entitas utama:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/Buku-kas.git
+git clone https://github.com/NickyIno/Buku-kas.git
 ```
 
 ### 2. Pindahkan ke Server
