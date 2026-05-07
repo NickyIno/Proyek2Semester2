@@ -201,6 +201,7 @@ $db   = "kas";
 
 ```
 http://localhost/Buku-kas
+user utama adalah "admin" dengan password "admin"
 ```
 
 > ✅ **Requirement:** PHP 8+, MySQL aktif, dan koneksi internet untuk CDN.
