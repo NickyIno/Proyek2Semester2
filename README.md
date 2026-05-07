@@ -198,7 +198,7 @@ $db   = "Kas";
 ### 5. Jalankan Aplikasi
 
 ```
-http://localhost/Proyek2Semester2
+http://localhost/Buku-kas
 ```
 
 > ✅ **Requirement:** PHP 8+, MySQL aktif, dan koneksi internet untuk CDN.
