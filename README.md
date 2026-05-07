@@ -173,16 +173,15 @@ git clone https://github.com/username/BukuKasTahuKupat2.git
 ### 2. Pindahkan ke Server
 
 ```
-Laragon  →  C:\laragon\www\BukuKasTahuKupat2
-XAMPP    →  htdocs\BukuKasTahuKupat2
+Laragon  →  C:\laragon\www\Buku-kas
+XAMPP    →  htdocs\Buku-kas
 ```
 
 ### 3. Import Database
 
 ```
 1. Buka phpMyAdmin
-2. Buat database baru
-3. Import file: dump.sql
+2. Import file: dump.sql
 ```
 
 ### 4. Konfigurasi Koneksi
@@ -193,7 +192,7 @@ Edit `aksi/koneksi.php`:
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "nama_database";
+$db   = "kas";
 ```
 
 ### 5. Jalankan Aplikasi
