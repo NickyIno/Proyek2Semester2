@@ -192,7 +192,7 @@ Edit `aksi/koneksi.php`:
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "kas";
+$db   = "Kas";
 ```
 
 ### 5. Jalankan Aplikasi
